@@ -5,6 +5,7 @@ The contents of this repository include the data and analysis for the [OpenEM](h
 * Dualem reading + GPS
 * EM38 readings + GPS
 * Soil samples + GPS
+
 Analysis of these data are done via the included python scripts and maps are produces in QGIS.
 
 Below are some maps that compare the readings taken with the  OpenEM and DualEM
