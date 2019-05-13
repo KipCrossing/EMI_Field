@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SAGA_METADATA>
+  <HISTORY saga-version="2.3.1">
+    <MODULE library="statistics_kriging" id="0" name="Ordinary Kriging">
+      <OPTION type="table_field" id="FIELD" name="Attribute" index="8">1mPRPcon</OPTION>
+      <OPTION type="choice" id="TQUALITY" name="Type of Quality Measure" index="0">standard deviation</OPTION>
+      <OPTION type="boolean" id="LOG" name="Logarithmic Transformation">TRUE</OPTION>
+      <OPTION type="boolean" id="BLOCK" name="Block Kriging">TRUE</OPTION>
+      <OPTION type="double" id="DBLOCK" name="Block Size">100.000000</OPTION>
+      <OPTION type="double" id="VAR_MAXDIST" name="Maximum Distance">-1.000000</OPTION>
+      <OPTION type="integer" id="VAR_NCLASSES" name="Lag Distance Classes">100</OPTION>
+      <OPTION type="integer" id="VAR_NSKIP" name="Skip">1</OPTION>
+      <OPTION type="text" id="VAR_MODEL" name="Model">a + b * x</OPTION>
+      <OPTION type="choice" id="TARGET_DEFINITION" name="Target Grid System" index="0">user defined</OPTION>
+      <OPTION type="double" id="TARGET_USER_SIZE" name="Cellsize">0.000020</OPTION>
+      <OPTION type="double" id="TARGET_USER_XMIN" name="Left">150.661905</OPTION>
+      <OPTION type="double" id="TARGET_USER_XMAX" name="Right">150.663105</OPTION>
+      <OPTION type="double" id="TARGET_USER_YMIN" name="Bottom">-34.026553</OPTION>
+      <OPTION type="double" id="TARGET_USER_YMAX" name="Top">-34.024713</OPTION>
+      <OPTION type="choice" id="TARGET_USER_FITS" name="Fit" index="0">nodes</OPTION>
+      <OPTION type="choice" id="SEARCH_RANGE" name="Search Range" index="0">local</OPTION>
+      <OPTION type="double" id="SEARCH_RADIUS" name="Maximum Search Distance">1000.000000</OPTION>
+      <OPTION type="choice" id="SEARCH_POINTS_ALL" name="Number of Points" index="0">maximum number of nearest points</OPTION>
+      <OPTION type="integer" id="SEARCH_POINTS_MIN" name="Minimum">16</OPTION>
+      <OPTION type="integer" id="SEARCH_POINTS_MAX" name="Maximum">20</OPTION>
+      <OPTION type="choice" id="SEARCH_DIRECTION" name="Direction" index="0">all directions</OPTION>
+      <INPUT type="shapes" id="POINTS" name="Points">
+        <FILE>/tmp/processing_a27f6c69912e4244ba47ba5ab2e0d725/b2696980d0e44b6b9a9b80353ca0422d/POINTS.shp</FILE>
+      </INPUT>
+      <OUTPUT type="grid" id="PREDICTION" name="Prediction">POINTS.1mPRPcon [Ordinary Kriging]</OUTPUT>
+    </MODULE>
+  </HISTORY>
+  <SOURCE>
+    <FILE>/home/kipling/Programs/EMI_Field/Cobbity8/QGIS/DualEM_1mPRPcon.sgrd</FILE>
+    <DATABASE></DATABASE>
+    <PROJECTION>
+      <OGC_WKT>GEOGCS["GCS_WGS_1984",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137,298.257223563]],PRIMEM["Greenwich",0],UNIT["Degree",0.017453292519943295]]</OGC_WKT>
+      <PROJ4>+proj=longlat +a=6378137.000000 +b=6356752.314245 +no_defs</PROJ4>
+      <EPSG>-1</EPSG>
+    </PROJECTION>
+  </SOURCE>
+  <DESCRIPTION></DESCRIPTION>
+</SAGA_METADATA>
