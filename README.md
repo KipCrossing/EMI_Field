@@ -16,3 +16,8 @@ Below are some maps that compare the readings taken with the  OpenEM and DualEM
 
 ## DualEM
 ![alt text](Cobbity8/Screenshots/Dualem_mixed032HCPcon.png)
+
+
+## OpenEM vs DualEM
+![alt text](Cobbity8/Screenshots/Dualem_OpenEM.png)
+
