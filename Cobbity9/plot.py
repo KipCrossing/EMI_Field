@@ -1,19 +1,25 @@
+import sys
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-openem_df = pd.read_csv("OpenEM_Cobbity_10am_all.csv")
+openem_df = pd.read_csv("OpenEM_Cobbity_2pm_all.csv")
 
-runs_df = pd.read_csv("runs.csv")
+runs_df = pd.read_csv("runs2.csv")
 
 print(pd.concat([runs_df, runs_df], axis=0))
 
 print(list(openem_df))
 
 plt.plot(openem_df['Longitude'], openem_df['Latitude'])
+for i in range(len(openem_df['ID'])):
+    if not i % 10:
+        plt.annotate(openem_df['ID'][i], xy=(openem_df['Longitude']
+                                             [i], openem_df['Latitude'][i]), color='purple')
 plt.show()
 grads = []
 
+# sys.exit("End of code")
 
 for j in range(len(runs_df['direction'])):
     print(runs_df['start'][j], runs_df['end'][j])
@@ -64,4 +70,4 @@ plt.plot(out_df['Longitude'], out_df['Latitude'])
 plt.show()
 plt.plot(out_df['ID'], out_df['Hp'])
 plt.show()
-out_df.to_csv('OpenEM_Cobbity_10am_straight.csv', index=False)
+out_df.to_csv('OpenEM_Cobbity_2pm_straight.csv', index=False)
